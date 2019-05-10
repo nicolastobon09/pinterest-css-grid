@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Pinterest</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,250px);
+            grid-gap: 5px;
+            justify-content: center;
+        }
+        .post-image{
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .post-overlay{
+            background:rgba(0,0,0, .4);
+            position:absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        .item{
+            padding: 5px;
+            cursor: pointer;
+            position: relative;
+            display: block;
+        }
+        .item:hover .post-overlay{
+            border-radius: 10px;
+            display: flex;
+        }
+        .item img{
+            /* max-width: 100%; */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        i{
+            font-size: 40px;
+            color: #e21515;
+        }
+        .level-1{
+            grid-row-end: span 3;
+        }
+        .level-2{
+            grid-row-end: span 2;
+        }
+        .level-3{
+            grid-row-end: span 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item level-1">
+            <figure class="post-image">
+                <img src="./image/landing.webp" alt="">
+            </figure>
+            <span class="post-overlay"><i class="fas fa-heart">S</span></i></span>
+        </div>
+        <div class="item level-2">
+            <figure class="post-image">
+                <img src="./image/tshirt.webp" alt="">
+            </figure>
+            <span class="post-overlay"><i class="fas fa-heart"></i></span>
+        </div>
+        <div class="item level-3">
+            <figure class="post-image">
+                <img src="./image/house.jpg" alt="">
+            </figure>
+            <span class="post-overlay"><i class="fas fa-heart"></i></span>
+        </div>
+        <div class="item level-1">
+            <figure class="post-image">
+                <img src="./image/landing.webp" alt="">
+            </figure>
+            <span class="post-overlay"><i class="fas fa-heart"></i></span>
+        </div>
+        <div class="item level-2">
+            <figure class="post-image">
+                <img src="./image/tshirt.webp" alt="">
+            </figure>
+            <span class="post-overlay"><i class="fas fa-heart"></i></span>
+        </div>
+        <div class="item level-3">
+            <figure class="post-image">
+                <img src="./image/house.jpg" alt="">
+            </figure>
+            <span class="post-overlay"><i class="fas fa-heart"></i></span>
+        </div>
+        <div class="item level-1">
+            <figure class="post-image">
+                <img src="./image/landing.webp" alt="">
+            </figure>
+            <span class="post-overlay"><i class="fas fa-heart"></i></span>
+        </div>
+        <div class="item level-2">
+            <figure class="post-image">
+                <img src="./image/tshirt.webp" alt="">
+            </figure>
+            <span class="post-overlay"><i class="fas fa-heart"></i></span>
+        </div>
+        <div class="item level-3">
+            <figure class="post-image">
+                <img src="./image/house.jpg" alt="">
+            </figure>
+            <span class="post-overlay"><i class="fas fa-heart"></i></span>
+        </div>
+        <div class="item level-1">
+            <figure class="post-image">
+                <img src="./image/landing.webp" alt="">
+            </figure>
+            <span class="post-overlay"><i class="fas fa-heart"></i></span>
+        </div>
+        <div class="item level-2">
+            <figure class="post-image">
+                <img src="./image/tshirt.webp" alt="">
+            </figure>
+            <span class="post-overlay"><i class="fas fa-heart"></i></span>
+        </div>
+        <div class="item level-3">
+            <figure class="post-image">
+                <img src="./image/house.jpg" alt="">
+            </figure>
+            <span class="post-overlay"><i class="fas fa-heart"></i></span>
+        </div>
+    </div>
+</body>
+</html>
